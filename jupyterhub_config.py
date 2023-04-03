@@ -1,1 +1,5 @@
-c.NotebookApp.allow_origin = '*'
+c.JupyterHub.tornado_settings = {
+'headers': {
+'Content-Security-Policy': "frame-ancestors * 'self' "
+}
+}
